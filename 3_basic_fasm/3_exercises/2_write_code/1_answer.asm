@@ -18,7 +18,7 @@ start:
     add     esi,eax;eax=b esi=a+b edx=0
     mov     eax,esi;eax=a+b=DIVIDEND esi=a+b edx=0
     mov     ecx,2;eax=a+b esi=a+b edx=0 ebx=DIVISOR=2
-    div     ecx
+    div     ecx; eax <- Quotien de edx:eax / ecx ET edx <- Reste de edx:eax / ecx
     call    print_eax
     ; Exit the process:
 	push	0
